@@ -1,40 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Timetable Management
+
+A web application foundation for managing academic timetables, built with Next.js and Tailwind CSS, with server-side dependencies prepared for authentication and database-backed scheduling workflows.
+
+## Overview
+
+This repository currently contains the core project configuration and dependencies needed to build a timetable management platform. It is set up as a Next.js application with a modern frontend stack and backend-oriented packages (Express, Passport, MySQL) available for integration.
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **UI:** React 19 (RC), Tailwind CSS
+- **Backend-related packages:** Express, Passport, Express Session, CORS, Cookie Parser
+- **Database driver:** MySQL (`mysql` npm package)
+- **Auth/Security:** Passport Local, bcrypt
+
+## Prerequisites
+
+Make sure the following are installed:
+
+- **Node.js** (LTS recommended, v20+)
+- **npm** (ships with Node.js)
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+	 ```bash
+	 npm install
+	 ```
+
+2. Start the development server:
+
+	 ```bash
+	 npm run dev
+	 ```
+
+3. Open your browser at:
+
+	 ```
+	 http://localhost:3000
+	 ```
+
+## Available Scripts
+
+- `npm run dev` – Start the Next.js development server
+- `npm run build` – Build the app for production
+- `npm run start` – Run the production server
+- `npm run lint` – Run lint checks via Next.js
+
+## Environment Variables
+
+Create a `.env.local` file for local development and keep secrets out of version control.
+
+Suggested variables (adjust to your implementation):
+
+```env
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=your_user
+DB_PASSWORD=your_password
+DB_NAME=timetable_db
+SESSION_SECRET=change_this_secret
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> Note: `.env*` files are ignored by git in this repository.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Current Project Status
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The repository is currently in a **configuration-first** state (project setup and dependencies are present). Application feature directories (such as `app/`, `pages/`, or `components/`) are not yet committed in the current workspace snapshot.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Suggested Next Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+As implementation progresses, consider organizing the codebase like this:
 
-## Learn More
+```text
+app/
+	(routes and layouts)
+components/
+	(reusable UI components)
+lib/
+	(db, auth, helpers)
+server/
+	(express integration, middleware)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+1. Create a feature branch.
+2. Keep changes focused and well-scoped.
+3. Run `npm run lint` before opening a pull request.
+4. Provide a clear PR description with testing notes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+No license file is currently defined in this repository. Add a `LICENSE` file if you plan to distribute the project publicly.

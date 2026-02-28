@@ -94,3 +94,6 @@ server/
 ## License
 
 No license file is currently defined in this repository. Add a `LICENSE` file if you plan to distribute the project publicly.
+
+##Links
+Follow almostalok.tech for updates.

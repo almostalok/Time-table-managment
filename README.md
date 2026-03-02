@@ -1,4 +1,4 @@
-# Timetable Management W- Dynamic output(SQL Db)
+# Timetable Management W- Dynamic output
 
 A web application foundation for managing academic timetables, built with Next.js and Tailwind CSS, with server-side dependencies prepared for authentication and database-backed scheduling workflows.
 

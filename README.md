@@ -124,7 +124,6 @@ No license file is currently defined.
 If you plan to distribute this publicly, add a `LICENSE` file.
 
 ---
-
 ## Links
 
 Follow **almostalok.tech** for updates.

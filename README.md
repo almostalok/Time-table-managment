@@ -1,58 +1,80 @@
-# Timetable Management W- Dynamic output
+# Timetable Management (aka “Please Stop Double-Booking Physics Lab”)
 
-A web application foundation for managing academic timetables, built with Next.js and Tailwind CSS, with server-side dependencies prepared for authentication and database-backed scheduling workflows.
+Welcome! This repo is the launchpad for a timetable management app built with **Next.js + Tailwind** and backend-ready dependencies for auth + database workflows.
 
-## Overview
+Think of it as:  
+**solid project setup now, feature chaos later (the fun kind).**
 
-This repository currently contains the core project configuration and dependencies needed to build a timetable management platform. It is set up as a Next.js application with a modern frontend stack and backend-oriented packages (Express, Passport, MySQL) available for integration.
+---
+
+## What’s in here right now?
+
+At the moment, this repository is in a **configuration-first** stage:
+
+- Core Next.js setup ✅
+- UI stack dependencies ✅
+- Backend/auth/database-related packages ready ✅
+- Full feature folders (`app/`, `pages/`, etc.) still cooking 🍳
+
+So yes, this is the “assembled ingredients” phase, not the “served dinner” phase.
+
+---
 
 ## Tech Stack
 
 - **Framework:** Next.js 15
 - **UI:** React 19 (RC), Tailwind CSS
-- **Backend-related packages:** Express, Passport, Express Session, CORS, Cookie Parser
-- **Database driver:** MySQL (`mysql` npm package)
-- **Auth/Security:** Passport Local, bcrypt
+- **Backend-related packages:** Express, Passport, express-session, CORS, cookie-parser
+- **Database driver:** MySQL (`mysql`)
+- **Auth/Security:** passport-local, bcrypt
+
+---
 
 ## Prerequisites
 
-Make sure the following are installed:
+Please install:
 
 - **Node.js** (LTS recommended, v20+)
-- **npm** (ships with Node.js)
+- **npm** (comes with Node.js)
 
-## Getting Started
+---
 
-1. Install dependencies:
+## Quick Start (Speedrun Edition)
 
-	 ```bash
-	 npm install
-	 ```
+1. Install dependencies
 
-2. Start the development server:
+   ```bash
+   npm install
+   ```
 
-	 ```bash
-	 npm run dev
-	 ```
+2. Start dev server
 
-3. Open your browser at:
+   ```bash
+   npm run dev
+   ```
 
-	 ```
-	 http://localhost:3000
-	 ```
+3. Open:
+
+   ```text
+   http://localhost:3000
+   ```
+
+If the app had a personality, this is where it would say: “It works on my machine.”
+
+---
 
 ## Available Scripts
 
-- `npm run dev` – Start the Next.js development server
-- `npm run build` – Build the app for production
-- `npm run start` – Run the production server
-- `npm run lint` – Run lint checks via Next.js
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run start` — Run production server
+- `npm run lint` — Run lint checks
+
+---
 
 ## Environment Variables
 
-Create a `.env.local` file for local development and keep secrets out of version control.
-
-Suggested variables (adjust to your implementation):
+Create a `.env.local` file for local development:
 
 ```env
 DB_HOST=localhost
@@ -63,37 +85,46 @@ DB_NAME=timetable_db
 SESSION_SECRET=change_this_secret
 ```
 
-> Note: `.env*` files are ignored by git in this repository.
+> `.env*` files are git-ignored in this repository.  
+> Your secrets stay secret. Your timetable drama does not.
 
-## Current Project Status
+---
 
-The repository is currently in a **configuration-first** state (project setup and dependencies are present). Application feature directories (such as `app/`, `pages/`, or `components/`) are not yet committed in the current workspace snapshot.
+## Suggested Future Structure
 
-## Suggested Next Structure
-
-As implementation progresses, consider organizing the codebase like this:
+As features are added, a structure like this may help:
 
 ```text
 app/
-	(routes and layouts)
+  (routes and layouts)
 components/
-	(reusable UI components)
+  (reusable UI components)
 lib/
-	(db, auth, helpers)
+  (db, auth, helpers)
 server/
-	(express integration, middleware)
+  (express integration, middleware)
 ```
+
+---
 
 ## Contributing
 
-1. Create a feature branch.
-2. Keep changes focused and well-scoped.
-3. Run `npm run lint` before opening a pull request.
-4. Provide a clear PR description with testing notes.
+1. Create a feature branch
+2. Keep changes focused
+3. Run `npm run lint` before PR
+4. Add a clear PR description + testing notes
+
+Small PRs get reviewed faster and hurt fewer feelings.
+
+---
 
 ## License
 
-No license file is currently defined in this repository. Add a `LICENSE` file if you plan to distribute the project publicly.
+No license file is currently defined.  
+If you plan to distribute this publicly, add a `LICENSE` file.
 
-##Links
-Follow almostalok.tech for updates.
+---
+
+## Links
+
+Follow **almostalok.tech** for updates.

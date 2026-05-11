@@ -9,14 +9,14 @@ Think of it as:
 
 ## What’s in here right now?
 
-At the moment, this repository is in a **configuration-first** stage:
+This repository now includes a **working dynamic timetable generator**:
 
 - Core Next.js setup ✅
 - UI stack dependencies ✅
-- Backend/auth/database-related packages ready ✅
-- Full feature folders (`app/`, `pages/`, etc.) still cooking 🍳
+- Dynamic timetable UI (`app/`) ✅
+- Non-AI deterministic timetable generation logic ✅
 
-So yes, this is the “assembled ingredients” phase, not the “served dinner” phase.
+You can change days, periods, and subjects, and the timetable updates directly from your inputs.
 
 ---
 

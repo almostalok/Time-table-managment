@@ -1,22 +1,31 @@
-# Timetable Management (aka “Please Stop Double-Booking Physics Lab”)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&text=Time%20Table%20Management&fontAlign=50&fontAlignY=35&desc=Dynamic%20Timetable%20Generator&descAlign=50&descAlignY=55&color=gradient" alt="header" />
+</p>
 
-Welcome! This repo is the launchpad for a timetable management app built with **Next.js + Tailwind** and backend-ready dependencies for auth + database workflows.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&pause=1000&center=true&vCenter=true&width=900&lines=Build+smart+timetables+in+seconds;Change+days%2C+periods%2C+and+subjects+live;Deterministic+generation+without+AI+calls" alt="typing animation" />
+</p>
 
-Think of it as:  
-**solid project setup now, feature chaos later (the fun kind).**
+<p align="center">
+  <img src="https://img.shields.io/github/stars/almostalok/Time-table-managment?style=for-the-badge&logo=github" alt="stars" />
+  <img src="https://img.shields.io/github/forks/almostalok/Time-table-managment?style=for-the-badge&logo=github" alt="forks" />
+  <img src="https://img.shields.io/github/issues/almostalok/Time-table-managment?style=for-the-badge&logo=github" alt="issues" />
+  <img src="https://komarev.com/ghpvc/?username=almostalok&repo=Time-table-managment&style=for-the-badge" alt="views" />
+</p>
 
----
+## Overview
 
-## What’s in here right now?
+Timetable Management is a Next.js + Tailwind app for generating class timetables from user input in real time.
 
-This repository now includes a **working dynamic timetable generator**:
+### Current capabilities
 
-- Core Next.js setup ✅
-- UI stack dependencies ✅
-- Dynamic timetable UI (`app/`) ✅
-- Non-AI deterministic timetable generation logic ✅
-
-You can change days, periods, and subjects, and the timetable updates directly from your inputs.
+- Dynamic timetable generation from configurable:
+  - Number of days
+  - Periods per day
+  - Subject entries (name, teacher, room, weekly classes)
+- Deterministic scheduling logic (no external AI/API calls)
+- Editable subject list with add/remove actions
+- Responsive table-based output for generated schedule
 
 ---
 
@@ -24,30 +33,21 @@ You can change days, periods, and subjects, and the timetable updates directly f
 
 - **Framework:** Next.js 15
 - **UI:** React 19 (RC), Tailwind CSS
-- **Backend-related packages:** Express, Passport, express-session, CORS, cookie-parser
+- **Server-ready dependencies:** Express, Passport, express-session, CORS, cookie-parser
 - **Database driver:** MySQL (`mysql`)
-- **Auth/Security:** passport-local, bcrypt
+- **Auth/Security packages:** passport-local, bcrypt
 
 ---
 
-## Prerequisites
+## Quick Start
 
-Please install:
-
-- **Node.js** (LTS recommended, v20+)
-- **npm** (comes with Node.js)
-
----
-
-## Quick Start (Speedrun Edition)
-
-1. Install dependencies
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start dev server
+2. Run in development:
 
    ```bash
    npm run dev
@@ -59,22 +59,20 @@ Please install:
    http://localhost:3000
    ```
 
-If the app had a personality, this is where it would say: “It works on my machine.”
-
 ---
 
-## Available Scripts
+## Scripts
 
-- `npm run dev` — Start development server
-- `npm run build` — Build for production
-- `npm run start` — Run production server
-- `npm run lint` — Run lint checks
+- `npm run dev` — start development server
+- `npm run build` — build for production
+- `npm run start` — run production server
+- `npm run lint` — run lint checks (first run may ask to initialize ESLint config)
 
 ---
 
 ## Environment Variables
 
-Create a `.env.local` file for local development:
+Create `.env.local`:
 
 ```env
 DB_HOST=localhost
@@ -85,25 +83,13 @@ DB_NAME=timetable_db
 SESSION_SECRET=change_this_secret
 ```
 
-> `.env*` files are git-ignored in this repository.  
-> Your secrets stay secret. Your timetable drama does not.
-
 ---
 
-## Suggested Future Structure
+## Project Snapshot
 
-As features are added, a structure like this may help:
-
-```text
-app/
-  (routes and layouts)
-components/
-  (reusable UI components)
-lib/
-  (db, auth, helpers)
-server/
-  (express integration, middleware)
-```
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=almostalok&repo=Time-table-managment&theme=transparent" alt="repo stats" />
+</p>
 
 ---
 
@@ -111,20 +97,5 @@ server/
 
 1. Create a feature branch
 2. Keep changes focused
-3. Run `npm run lint` before PR
-4. Add a clear PR description + testing notes
-
-Small PRs get reviewed faster and hurt fewer feelings.
-
----
-
-## License
-
-No license file is currently defined.  
-If you plan to distribute this publicly, add a `LICENSE` file.
-
----
-
-## Links
-
-Follow **almostalok.tech** for updates.
+3. Run `npm run build` and `npm run lint`
+4. Open a PR with a clear summary and testing notes

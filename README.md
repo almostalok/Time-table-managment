@@ -25,7 +25,7 @@
 - [🚀 Features](#-features)
 - [🧰 Tech Stack](#-tech-stack)
 - [⚡ Quick Start](#-quick-start)
-- [🛠️ Scripts](#️-scripts)
+- [🛠️ Scripts](#-scripts)
 - [🔐 Environment Variables](#-environment-variables)
 - [🧩 Project Snapshot](#-project-snapshot)
 - [🤝 Contributing](#-contributing)
